@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UBCCovidScreen.MainPage">
+
+    <StackLayout VerticalOptions="Center"
+                 Margin="20">
+        <Entry x:Name="fName"
+               Placeholder="First Name"/>
+        <Entry x:Name="lName"
+               Placeholder="Last Name"/>
+        <Picker x:Name="SportPicker"
+        Title="Select a sport"
+        TitleColor="Red">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Men's Rowing</x:String>
+                    <x:String>Men's Rugby</x:String>
+                    <x:String>Men's Soccer</x:String>
+                    <x:String>Men's T&F</x:String>
+                    <x:String>Men's Basketball  </x:String>
+                    <x:String>Men's Hockey</x:String>
+                    <x:String>Men's Swimming</x:String>
+                    <x:String>Men's Football</x:String>
+                    <x:String>Women's Rowing</x:String>
+                    <x:String>Women's Rugby</x:String>
+                    <x:String>Women's Soccer</x:String>
+                    <x:String>Women's T&F</x:String>
+                    <x:String>Women's Basketball</x:String>
+                    <x:String>Women's Hockey</x:String>
+                    <x:String>Women's Swimming</x:String>
+                    <x:String>Women's Football</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+        <Button x:Name="LoginButton"
+                Margin="0,50,0,0"
+                Text="Register"
+                Clicked="LoginButton_Clicked"
+                BackgroundColor="DarkBlue"
+                TextColor="White"/>
+    </StackLayout>
+
+</ContentPage>
