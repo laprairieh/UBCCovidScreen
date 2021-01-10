@@ -16,5 +16,17 @@ namespace UBCCovidScreen
         {
             Navigation.PushAsync(new NewTravelPage());
         }
+
+        private void submit_Clicked(object sender, EventArgs e)
+        {
+            if (Y1.isClicked && Y2.isClicked && Y3.isClicked)
+            {
+                Navigation.PushAsync(new BadPage());
+            }
+            else
+            {
+                Navigation.PushAsync(new GoodPage());
+            }
+        }
     }
 }

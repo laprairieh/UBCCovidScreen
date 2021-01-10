@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="UBCCovidScreen.GoodPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image x:Name="greenCheck"
+                Aspect="AspectFit"
+               Margin="15,40"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+            <Label Text="You're good to go!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Button Text="Continue" 
+                            x:Name="Cont1"
+                            BackgroundColor="SandyBrown"
+                            BorderColor="Black"
+                            BorderWidth="2"
+                            Margin="0, 75"
+                            Clicked = "cont1_Clicked"
+                      />
+        </StackLayout>
+        
+        
+    </ContentPage.Content>
+</ContentPage>
